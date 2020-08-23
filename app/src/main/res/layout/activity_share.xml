@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purpleLight"
+    tools:context=".ShareActivity">
+
+    <TextView
+        android:id="@+id/share_answer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/half_eclipse"
+        android:gravity="center"
+        android:text="@string/shareAnswer"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextShareTitle"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/rectangle_rounded_corners"
+        android:ems="10"
+        android:gravity="top"
+        android:inputType="textPersonName"
+        android:padding="32dp"
+        android:hint="ادخل عنوان المشاركة"
+        android:textColor="@color/purpleDark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_answer" />
+
+    <Button
+        android:id="@+id/button_share_question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/button_purple"
+        android:text="نشر السؤال"
+        android:onClick="onShareQuestionClicked"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextShareTitle"
+        tools:ignore="UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
